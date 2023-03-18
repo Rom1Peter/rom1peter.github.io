@@ -91,10 +91,28 @@
 
     // Load additional projects
     $('#view-more-projects').click(function(e){
-        e.preventDefault();
+        /*e.preventDefault();
         $(this).fadeOut(300, function() {
+            $(this).rotate({animateTo:180});
+
             $('#more-projects').fadeIn(300);
-        });
+        });*/
+
+        if(this.style.transform === "rotate(90deg)") {
+            this.style.transform = "rotate(0deg)";
+            document.getElementById("hiddenContent").style.display = "none";
+            $('#FishingVector').css("height", "300");
+            return;
+        }
+        this.style.transform = "rotate(90deg)";
+        $('#hiddenContent').slideToggle(300);
+        $('#hiddenContent').fadeIn(300);
+        $('#hiddenContent').css("display", "block");
+        $('#FishingVector').css("height", "1000");
     });
+
+
+
+
 
 })(jQuery);

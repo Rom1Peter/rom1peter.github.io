@@ -788,11 +788,39 @@ footer {
         }
     }
 }
-#buttonHiding{
+#view-more-projects{
     height:100px;
     width:100px;
+
 }
+
+#hiddenContent {
+    height: 100px;
+    width: 100px;
+    display: none;
+
+}
+
+#FishingVector{
+    overflow: hidden;
+    transition: height 200ms;
+}
+
+.GifProjects {
+    height: 200px;
+    width: 300px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-left: 150px;
+    margin-right: auto
+
+}
+
+
+
 /*
+
     ---------------------------------------
     ----- 11. Optional Section Styles -----
     ---------------------------------------
