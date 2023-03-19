@@ -101,14 +101,16 @@
         if(this.style.transform === "rotate(90deg)") {
             this.style.transform = "rotate(0deg)";
             document.getElementById("hiddenContent").style.display = "none";
-            $('#FishingVector').css("height", "300");
+            $('#FishingVector').css("height", "240");
+            $('#SeeMore').text("See More");
             return;
         }
         this.style.transform = "rotate(90deg)";
-        $('#hiddenContent').slideToggle(300);
+        $('#hiddenContent').slideToggle(240);
         $('#hiddenContent').fadeIn(300);
         $('#hiddenContent').css("display", "block");
         $('#FishingVector').css("height", "1000");
+        $('#SeeMore').text("See Less");
     });
 
 
